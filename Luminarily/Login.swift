@@ -2,23 +2,25 @@
 //  ContentView.swift
 //  Luminarily
 //
-//  Created by Dominic Roser on 3/22/25.
-//
 
 import SwiftUI
 
-struct ContentView: View {
+struct Login: View {
+    @State private var username: String = ""
+    @State private var password: String = ""
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Login")
+            TextField("Username", text: $username)
+            TextField("Password", text: $password)
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    Login()
 }
