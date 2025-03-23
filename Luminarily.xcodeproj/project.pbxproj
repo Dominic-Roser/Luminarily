@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7387171CA033DDE86615EB37 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D9A799EFB4F81F3F3D802D7 /* awsconfiguration.json */; };
+		AFD06F84BED74181AFBDDF97 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E74E57E7B631713F34BF1260 /* amplifyconfiguration.json */; };
+		EAF406512D8FB72900669CA0 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = EAF406502D8FB72900669CA0 /* AWSAPIPlugin */; };
+		EAF406532D8FB72900669CA0 /* AWSCloudWatchLoggingPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = EAF406522D8FB72900669CA0 /* AWSCloudWatchLoggingPlugin */; };
+		EAF406552D8FB72900669CA0 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = EAF406542D8FB72900669CA0 /* AWSCognitoAuthPlugin */; };
+		EAF406572D8FB72900669CA0 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = EAF406562D8FB72900669CA0 /* AWSDataStorePlugin */; };
+		EAF406592D8FB72900669CA0 /* AWSLocationGeoPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = EAF406582D8FB72900669CA0 /* AWSLocationGeoPlugin */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EA9E546C2D8F97A3008E2C91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D9A799EFB4F81F3F3D802D7 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		E74E57E7B631713F34BF1260 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		EA9E545B2D8F97A2008E2C91 /* Luminarily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luminarily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9E546B2D8F97A3008E2C91 /* LuminarilyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminarilyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9E54752D8F97A3008E2C91 /* LuminarilyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuminarilyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF406512D8FB72900669CA0 /* AWSAPIPlugin in Frameworks */,
+				EAF406592D8FB72900669CA0 /* AWSLocationGeoPlugin in Frameworks */,
+				EAF406532D8FB72900669CA0 /* AWSCloudWatchLoggingPlugin in Frameworks */,
+				EAF406552D8FB72900669CA0 /* AWSCognitoAuthPlugin in Frameworks */,
+				EAF406572D8FB72900669CA0 /* AWSDataStorePlugin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 				EA9E546E2D8F97A3008E2C91 /* LuminarilyTests */,
 				EA9E54782D8F97A3008E2C91 /* LuminarilyUITests */,
 				EA9E545C2D8F97A2008E2C91 /* Products */,
+				F5D763A643FD540A86047A2C /* AmplifyConfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +108,15 @@
 				EA9E54752D8F97A3008E2C91 /* LuminarilyUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D763A643FD540A86047A2C /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5D9A799EFB4F81F3F3D802D7 /* awsconfiguration.json */,
+				E74E57E7B631713F34BF1260 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +139,11 @@
 			);
 			name = Luminarily;
 			packageProductDependencies = (
+				EAF406502D8FB72900669CA0 /* AWSAPIPlugin */,
+				EAF406522D8FB72900669CA0 /* AWSCloudWatchLoggingPlugin */,
+				EAF406542D8FB72900669CA0 /* AWSCognitoAuthPlugin */,
+				EAF406562D8FB72900669CA0 /* AWSDataStorePlugin */,
+				EAF406582D8FB72900669CA0 /* AWSLocationGeoPlugin */,
 			);
 			productName = Luminarily;
 			productReference = EA9E545B2D8F97A2008E2C91 /* Luminarily.app */;
@@ -195,6 +227,9 @@
 			);
 			mainGroup = EA9E54522D8F97A2008E2C91;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EA9E545C2D8F97A2008E2C91 /* Products */;
 			projectDirPath = "";
@@ -212,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7387171CA033DDE86615EB37 /* awsconfiguration.json in Resources */,
+				AFD06F84BED74181AFBDDF97 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +589,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.46.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAF406502D8FB72900669CA0 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		EAF406522D8FB72900669CA0 /* AWSCloudWatchLoggingPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCloudWatchLoggingPlugin;
+		};
+		EAF406542D8FB72900669CA0 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		EAF406562D8FB72900669CA0 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		EAF406582D8FB72900669CA0 /* AWSLocationGeoPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAF4064F2D8FB72900669CA0 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSLocationGeoPlugin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA9E54532D8F97A2008E2C91 /* Project object */;
 }
